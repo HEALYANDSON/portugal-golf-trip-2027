@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portugal Golf Trip</title>
+<meta name="description" content="The one-page go-to guide: Wednesday to Sunday, 4 rounds, 12 travellers, based at Vale do Lobo.">
+<meta name="theme-color" content="#0b2a1f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛳</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@400..800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --g950:#071f16; --g900:#0b2a1f; --g800:#0f3a2a; --g700:#155038; --g600:#1d6646; --g400:#4f9a6b;
+  --cream:#f5efe3; --paper:#fbf8f1; --sand:#eadcbf;
+  --ink:#13221a; --muted:#5b6a60; --line:rgba(19,34,26,.12);
+  --gold:#c9a24a; --gold-2:#e6c97f; --red:#c8102e; --pt-green:#046a38;
+  --radius:22px;
+  --shadow:0 1px 2px rgba(7,31,22,.06), 0 14px 34px -14px rgba(7,31,22,.22);
+  --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(1200px, 100% - 32px);margin-inline:auto}
+@media (min-width:720px){.wrap{width:min(1200px, 100% - 64px)}}
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:50;padding:18px 0;transition:background .3s, padding .3s, box-shadow .3s}
+.nav.scrolled{background:rgba(11,42,31,.86);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);padding:10px 0;box-shadow:0 1px 0 rgba(245,239,227,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream)}
+.brand-mark{width:36px;height:36px;border-radius:50%;background:conic-gradient(var(--pt-green) 0 144deg, var(--red) 144deg 360deg);display:grid;place-items:center;flex:none}
+.brand-mark span{width:28px;height:28px;border-radius:50%;background:var(--cream);color:var(--g900);display:grid;place-items:center;font:800 11px/1 var(--sans);letter-spacing:.02em}
+.brand-text{font-weight:800;font-size:15px;letter-spacing:.01em;line-height:1.1}
+.brand-text em{font-family:var(--serif);font-weight:500;font-style:italic;color:var(--gold-2);font-size:16px}
+.nav-links{display:flex;gap:2px;list-style:none}
+.nav-links a{display:block;color:rgba(245,239,227,.8);text-decoration:none;font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;transition:background .2s,color .2s}
+.nav-links a:hover{background:rgba(245,239,227,.1);color:#fff}
+@media (max-width:900px){.nav-links{display:none}}
+
+/* ---------- BUTTONS ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:700 15px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:transform .2s var(--ease), background .2s, color .2s, box-shadow .2s}
+.btn .i{width:18px;height:18px}
+.btn-sm{padding:10px 16px;font-size:14px}
+.btn-gold{background:var(--gold);color:var(--g950)}
+.btn-gold:hover{background:var(--gold-2);transform:translateY(-1px)}
+.btn-ghost{background:rgba(245,239,227,.08);color:var(--cream);box-shadow:inset 0 0 0 1px rgba(245,239,227,.32);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(245,239,227,.16)}
+.btn-dark{background:var(--g900);color:var(--cream)}
+.btn-dark:hover{background:var(--g700);transform:translateY(-1px)}
+.btn:focus-visible,.tab:focus-visible,.round:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--cream);overflow:hidden;isolation:isolate;background:var(--g900)}
+.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:-3}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 55%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(7,31,22,.84) 0%,rgba(7,31,22,.56) 36%,rgba(7,31,22,.06) 68%,rgba(7,31,22,0) 100%),
+  linear-gradient(180deg,rgba(7,31,22,.42) 0%,rgba(7,31,22,0) 22%,rgba(7,31,22,0) 56%,rgba(7,31,22,.92) 100%)}
+@media (max-width:720px){.hero::before{background:linear-gradient(180deg,rgba(7,31,22,.5) 0%,rgba(7,31,22,.3) 24%,rgba(7,31,22,.82) 56%,var(--g900) 100%)}.badge{display:none}}
+.hero-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:26px 32px;margin-top:30px}
+.hero-row .hero-ctas{margin-top:0}
+.countdown{display:flex;flex-direction:column;gap:10px}
+.cd-label{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-2)}
+.cd-label .i{width:16px;height:16px}
+.cd{display:flex;gap:8px}
+.cd div{min-width:74px;padding:11px 8px 9px;border-radius:14px;text-align:center;background:rgba(11,42,31,.52);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 0 0 1px rgba(245,239,227,.16)}
+.cd b{display:block;font-size:28px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;color:#fff}
+.cd small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,239,227,.6);margin-top:5px}
+.cd-msg{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;line-height:1.1}
+.cd-msg em{font-style:italic;font-weight:400;color:var(--gold-2)}
+@media (max-width:520px){.countdown,.cd{width:100%}.cd div{flex:1;min-width:0}.cd b{font-size:24px}}
+.hero-inner{padding:130px 0 36px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2)}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor}
+@media (max-width:520px){.eb-extra{display:none}}
+.hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(4.1rem,12.5vw,10.5rem);line-height:.86;letter-spacing:-.035em;margin-top:18px;font-variation-settings:"opsz" 144}
+.hero h1 em{display:block;font-style:italic;font-weight:400;color:var(--gold-2);font-size:.6em;letter-spacing:-.02em;margin-top:.1em;padding-left:.06em}
+.hero-lede{max-width:36ch;font-size:clamp(1.05rem,1.5vw,1.22rem);color:rgba(245,239,227,.88);margin-top:24px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-stats{margin-top:52px;display:grid;grid-template-columns:repeat(4,1fr);border-radius:20px;background:rgba(11,42,31,.52);-webkit-backdrop-filter:blur(16px) saturate(1.3);backdrop-filter:blur(16px) saturate(1.3);box-shadow:inset 0 0 0 1px rgba(245,239,227,.14);overflow:hidden}
+.stat{display:flex;align-items:center;gap:14px;padding:20px 22px;min-width:0}
+.stat + .stat{border-left:1px solid rgba(245,239,227,.12)}
+.stat .i{width:24px;height:24px;color:var(--gold-2)}
+.stat span{display:block;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,239,227,.6)}
+.stat b{display:block;font-size:17px;font-weight:800;color:#fff;line-height:1.25;white-space:nowrap}
+@media (max-width:820px){
+  .hero-stats{grid-template-columns:repeat(2,1fr);margin-top:36px}
+  .stat{padding:16px}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(245,239,227,.12)}
+  .stat b{font-size:15px}
+}
+.badge{position:absolute;top:clamp(92px,15vh,150px);right:max(16px, calc((100vw - 1200px)/2));width:clamp(96px,11vw,148px);aspect-ratio:1;color:var(--cream);z-index:1}
+.badge svg{width:100%;height:100%;animation:spin 26s linear infinite}
+.badge text{font:800 15px var(--sans);letter-spacing:.08em;fill:currentColor}
+.badge-core{position:absolute;inset:26%;border-radius:50%;background:var(--cream);color:var(--g900);display:grid;place-items:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.badge-core .i{width:42%;height:42%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.flag-wave{transform-box:fill-box;transform-origin:left center;animation:wave 3.2s ease-in-out infinite}
+@keyframes wave{0%,100%{transform:skewY(0) scaleX(1)}50%{transform:skewY(-5deg) scaleX(.9)}}
+.shimmer rect{animation:shimmer 4s ease-in-out infinite}
+.shimmer rect:nth-child(2n){animation-delay:-2s}
+@keyframes shimmer{0%,100%{opacity:.75}50%{opacity:.3}}
+
+/* ---------- SECTIONS ---------- */
+.section{padding:clamp(72px,10vw,124px) 0;scroll-margin-top:56px}
+.section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(32px,5vw,52px)}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--g600)}
+.kicker b{font-family:var(--serif);font-style:italic;font-weight:500;font-size:16px;letter-spacing:0;color:var(--gold)}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(2.4rem,5.6vw,4.3rem);line-height:.98;letter-spacing:-.03em;margin-top:14px;max-width:13ch}
+h2 em{font-style:italic;font-weight:400;color:var(--g600)}
+.section-head p{max-width:40ch;color:var(--muted);font-size:17px}
+
+/* ---------- ROUNDS ---------- */
+.rounds{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:1040px){.rounds{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.rounds{grid-template-columns:1fr}}
+.round{position:relative;display:flex;flex-direction:column;border-radius:var(--radius);background:var(--g900);color:var(--cream);overflow:hidden;text-decoration:none;box-shadow:var(--shadow);transition:transform .4s var(--ease), box-shadow .4s}
+.round:hover{transform:translateY(-6px);box-shadow:0 2px 4px rgba(7,31,22,.08),0 28px 50px -20px rgba(7,31,22,.45)}
+.round-art{aspect-ratio:300/170;position:relative;overflow:hidden}
+.round-art svg{width:100%;height:100%;transition:transform .8s var(--ease)}
+.round-art img,.ph-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.round:hover .round-art svg,.round:hover .round-art img{transform:scale(1.06)}
+.round-art::after,.ph-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,31,22,0) 55%,rgba(7,31,22,.35));pointer-events:none}
+.go{z-index:2;position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;background:rgba(11,42,31,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:grid;place-items:center;color:var(--cream);transition:background .3s, color .3s, transform .3s var(--ease)}
+.go .i{width:18px;height:18px}
+.round:hover .go{background:var(--gold);color:var(--g950);transform:rotate(-45deg)}
+.round-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.round-top{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,239,227,.55)}
+.round-day{background:rgba(245,239,227,.1);color:var(--cream);padding:5px 10px;border-radius:999px}
+.round h3{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1.02;letter-spacing:-.015em;margin-top:14px}
+.round .sub{color:var(--gold-2);font-family:var(--serif);font-style:italic;font-size:17px;margin-top:4px}
+.tee-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px}
+.tee{font-variant-numeric:tabular-nums;font-weight:800;font-size:14px;padding:7px 10px;border-radius:10px;background:rgba(245,239,227,.08);box-shadow:inset 0 0 0 1px rgba(245,239,227,.12)}
+.round dl{margin-top:auto;padding-top:18px;display:grid;gap:7px;font-size:13.5px}
+.round dl div{display:flex;justify-content:space-between;gap:12px;border-top:1px solid rgba(245,239,227,.1);padding-top:8px}
+.round dt{color:rgba(245,239,227,.55)}
+.round dd{font-weight:700;text-align:right}
+
+/* ---------- ITINERARY ---------- */
+.itin{background:var(--cream)}
+.day-tabs{position:relative;display:flex;gap:4px;padding:6px;background:#fff;border-radius:999px;box-shadow:var(--shadow);width:max-content;max-width:100%;overflow-x:auto;scrollbar-width:none;margin-bottom:22px}
+.day-tabs::-webkit-scrollbar{display:none}
+.tab{appearance:none;border:0;background:transparent;font:inherit;cursor:pointer;padding:10px 18px;border-radius:999px;display:flex;flex-direction:column;align-items:center;min-width:76px;color:var(--muted);transition:background .25s, color .25s}
+.tab b{font-size:15px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;line-height:1.2}
+.tab span{font-size:11px;font-weight:700}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--g900);color:var(--cream)}
+.tab[aria-selected="true"] span{color:var(--gold-2)}
+@media (max-width:460px){.tab{min-width:0;flex:1;padding:9px 6px}.day-tabs{width:100%}}
+.panel{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);background:#fff;border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
+@media (max-width:900px){.panel{grid-template-columns:1fr}}
+.ph{background:var(--g900);color:var(--cream);padding:14px 14px 30px;display:flex;flex-direction:column}
+.ph-art{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:300/150}
+.ph-art svg{width:100%;height:100%}
+.ph-body{padding:22px 14px 0;display:flex;flex-direction:column}
+.ph-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,239,227,.6)}
+.pill{padding:6px 11px;border-radius:999px;background:rgba(201,162,74,.16);color:var(--gold-2);white-space:nowrap}
+.ph h3{font-family:var(--serif);font-size:clamp(2.3rem,4.2vw,3.3rem);line-height:1;font-weight:600;letter-spacing:-.025em;margin-top:16px}
+.ph-sub{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--gold-2);margin-top:6px}
+.ph-flag{margin-top:16px;display:inline-flex;align-items:center;gap:8px;align-self:flex-start;background:var(--gold);color:var(--g950);padding:8px 12px;border-radius:10px;font-weight:800;font-size:13.5px}
+.ph-flag .i{width:16px;height:16px}
+.tees{margin-top:24px}
+.label{display:flex;justify-content:space-between;gap:10px;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,239,227,.55)}
+.tee-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.tee-card{background:rgba(245,239,227,.07);box-shadow:inset 0 0 0 1px rgba(245,239,227,.12);border-radius:14px;padding:12px 8px;text-align:center}
+.tee-card small{display:block;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,239,227,.5)}
+.tee-card b{display:block;font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;margin-top:2px}
+.pot-pill{margin-top:14px;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:linear-gradient(100deg,rgba(201,162,74,.24),rgba(201,162,74,.05));box-shadow:inset 0 0 0 1px rgba(201,162,74,.36)}
+.pot-pill b{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--gold-2);line-height:1}
+.pot-pill span{font-size:13.5px;color:rgba(245,239,227,.78);line-height:1.35}
+.ph-note{margin-top:22px;padding:16px;border-radius:14px;background:rgba(245,239,227,.07);box-shadow:inset 0 0 0 1px rgba(245,239,227,.12);color:rgba(245,239,227,.82);font-size:15px}
+.pl{padding:clamp(22px,3.6vw,42px);display:flex;flex-direction:column}
+.pl .tl{margin-bottom:22px}
+.pl-nav{margin-top:auto;padding-top:18px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.daylink{appearance:none;border:0;cursor:pointer;font:700 14px/1.2 var(--sans);color:var(--g800);background:var(--cream);padding:11px 16px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;transition:background .2s,color .2s}
+.daylink:hover{background:var(--g900);color:var(--cream)}
+.daylink .i{width:16px;height:16px}
+.daylink.prev .i{transform:rotate(180deg)}
+.daylink.next{margin-left:auto}
+.pl-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.pl-head h4{font-family:var(--serif);font-size:24px;font-weight:600}
+.pl-head span{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tl{list-style:none}
+.tl li{position:relative;display:grid;grid-template-columns:58px 44px minmax(0,1fr);column-gap:16px;align-items:center;padding:14px 0}
+.tl li::before{content:"";position:absolute;left:95px;top:0;bottom:0;width:2px;background:var(--line)}
+.tl li:first-child::before{top:50%}
+.tl li:last-child::before{bottom:50%}
+.tl li:only-child::before{display:none}
+.tl time{font-variant-numeric:tabular-nums;font-weight:800;font-size:17px;text-align:right}
+.tl .ic{position:relative;z-index:1;width:44px;height:44px;border-radius:14px;background:var(--cream);color:var(--g700);display:grid;place-items:center;box-shadow:0 0 0 6px #fff}
+.tl .ic .i{width:20px;height:20px}
+.tl li.key .ic{background:var(--g900);color:var(--gold-2)}
+.tl h5{font-size:17px;font-weight:700;line-height:1.3}
+.tl p{font-size:14.5px;color:var(--muted);margin-top:1px}
+@media (max-width:420px){.tl li{grid-template-columns:48px 40px minmax(0,1fr);column-gap:12px}.tl li::before{left:79px}.tl .ic{width:40px;height:40px}.tl time{font-size:15px}}
+.itin-foot{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;color:var(--muted);font-size:14px}
+.itin-foot span{display:inline-flex;align-items:center;gap:8px}
+.itin-foot .i{width:16px;height:16px;color:var(--g600)}
+.swap{animation:swapIn .5s var(--ease) both}
+.swap.pl{animation-delay:.06s}
+@keyframes swapIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- POT ---------- */
+.pot{background:var(--g900);color:var(--cream);overflow:hidden;position:relative}
+.pot::before{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-300px;border-radius:50%;background:radial-gradient(closest-side,rgba(201,162,74,.16),transparent);pointer-events:none}
+.pot .kicker{color:var(--gold-2)}
+.pot h2 em{color:var(--gold-2)}
+.pot-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
+@media (max-width:900px){.pot-grid{grid-template-columns:1fr}}
+.pot-lede{max-width:42ch;color:rgba(245,239,227,.78);font-size:17px;margin-top:20px}
+.figs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:32px}
+.fig{padding:18px 16px;border-radius:18px;background:rgba(245,239,227,.06);box-shadow:inset 0 0 0 1px rgba(245,239,227,.1)}
+.fig span{display:block;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,239,227,.55)}
+.fig b{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1.05;color:var(--gold-2);margin-top:6px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.fig small{display:block;font-size:13px;color:rgba(245,239,227,.6);margin-top:2px}
+@media (max-width:480px){.figs{grid-template-columns:1fr 1fr}.fig:last-child{grid-column:1/-1}}
+.pot-card{background:var(--cream);color:var(--ink);border-radius:28px;padding:clamp(22px,3.4vw,36px);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.pot-card h3{font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.2}
+.pot-card > p{color:var(--muted);font-size:15px;margin-top:4px}
+.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+.prize{background:#fff;border-radius:18px;padding:18px 12px;text-align:center;box-shadow:var(--shadow)}
+.prize .pic{width:52px;height:52px;border-radius:50%;margin:0 auto 10px;background:var(--g900);color:var(--gold-2);display:grid;place-items:center}
+.prize .pic .i{width:24px;height:24px}
+.prize b{display:block;font-size:15px;font-weight:800;line-height:1.25}
+.prize small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.daybar{margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.daybar div{border-radius:14px;padding:12px 12px 14px;background:var(--g900);color:var(--cream);position:relative;overflow:hidden}
+.daybar div::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--gold)}
+.daybar small{display:block;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-2)}
+.daybar b{display:block;font-size:19px;font-weight:800;margin-top:2px}
+.daybar span{display:block;font-size:12px;color:rgba(245,239,227,.62);line-height:1.3;margin-top:2px}
+.sum{margin-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px}
+.sum b{color:var(--ink)}
+@media (max-width:520px){.daybar{grid-template-columns:repeat(2,1fr)}.prizes{grid-template-columns:1fr}.prize{display:flex;align-items:center;gap:14px;text-align:left;padding:12px 14px}.prize .pic{margin:0;width:44px;height:44px}}
+
+/* ---------- PLAYERS ---------- */
+.players{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;list-style:none}
+@media (max-width:1040px){.players{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:640px){.players{grid-template-columns:repeat(3,1fr);gap:10px}}
+.player{background:#fff;border-radius:20px;padding:22px 10px 18px;text-align:center;box-shadow:var(--shadow);transition:transform .35s var(--ease)}
+.player:hover{transform:translateY(-4px)}
+.ball{width:58px;height:58px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-weight:800;font-size:19px;color:var(--g800);font-variant-numeric:tabular-nums;
+  background:radial-gradient(circle at 34% 28%,#fff 0,rgba(255,255,255,0) 46%),radial-gradient(rgba(19,34,26,.1) 1.3px,transparent 1.7px) 0 0/7px 7px,#f2eee5;
+  box-shadow:inset -6px -8px 14px rgba(19,34,26,.15),0 8px 16px -8px rgba(19,34,26,.45)}
+.player b{display:block;font-size:16px;font-weight:800;line-height:1.2}
+@media (max-width:400px){.ball{width:48px;height:48px;font-size:16px}.player b{font-size:14.5px}}
+.draw{margin-top:22px;padding:clamp(20px,3vw,28px);border-radius:24px;background:var(--cream);box-shadow:inset 0 0 0 1px var(--line)}
+.draw-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.draw h3{font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.2}
+.draw p{color:var(--muted);font-size:15px}
+.groups{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.groups[hidden]{display:none}
+@media (max-width:700px){.groups{grid-template-columns:1fr}}
+.group{background:var(--g900);color:var(--cream);border-radius:18px;padding:18px 20px;animation:swapIn .5s var(--ease) both;animation-delay:var(--d,0ms)}
+.group .label{color:var(--gold-2)}
+.group ul{list-style:none;margin-top:10px;display:grid;gap:6px}
+.group li{display:flex;align-items:center;gap:10px;font-weight:700}
+.group li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none}
+
+/* ---------- INFO ---------- */
+.info{background:var(--cream)}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:1040px){.info-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.info-grid{grid-template-columns:1fr}}
+.info-card{background:#fff;border-radius:22px;padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}
+.info-card .ic{width:48px;height:48px;border-radius:14px;background:var(--g900);color:var(--gold-2);display:grid;place-items:center}
+.info-card .ic .i{width:24px;height:24px}
+.info-card h3{font-family:var(--serif);font-size:23px;font-weight:600;line-height:1.15;margin-top:6px}
+.info-card p{color:var(--muted);font-size:15.5px}
+.info-card p b{color:var(--ink)}
+
+/* ---------- FOOTER ---------- */
+.foot{background:var(--g950);color:var(--cream);padding-top:clamp(48px,7vw,80px);overflow:hidden}
+.marquee{overflow:hidden;border-block:1px solid rgba(245,239,227,.1);padding:22px 0}
+.track{display:flex;width:max-content;animation:marquee 38s linear infinite}
+.track span{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,5vw,3.6rem);line-height:1;letter-spacing:-.02em;padding:0 28px;white-space:nowrap}
+.track span:nth-of-type(4n){font-style:italic;font-weight:400;color:var(--gold-2)}
+.track i{font-style:normal;color:var(--gold);font-size:clamp(1rem,2vw,1.4rem);align-self:center}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.foot-bottom{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;padding:44px 0 36px}
+.sign{font-family:var(--serif);font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:600;line-height:1.05;letter-spacing:-.02em}
+.sign em{font-style:italic;font-weight:400;color:var(--gold-2)}
+.foot-meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14px;color:rgba(245,239,227,.6)}
+.foot-meta a{text-decoration:none;color:var(--cream);font-weight:700}
+.foot-meta a:hover{color:var(--gold-2)}
+.credit{font-size:12.5px;color:rgba(245,239,227,.45);padding-bottom:28px}
+.credit a{color:rgba(245,239,227,.65)}
+.pt-stripe{height:6px;background:linear-gradient(90deg,var(--pt-green) 0 40%,var(--red) 40% 100%)}
+
+/* ---------- REVEAL ---------- */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease), transform .8s var(--ease);transition-delay:calc(var(--i,0) * 70ms)}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= SVG SPRITE: icons + illustrations ================= -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- icons (24x24 stroke) -->
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="M7.5 13.5h2M11 13.5h2M14.5 13.5h2M7.5 17h2M11 17h2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M6 21.5V3"/><path d="M6 3.5h11.5l-2.5 4 2.5 4H6"/><path d="M3 21.5h6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.4-5.5 6.5-5.5s5.7 2.1 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16.6 14.2c2.6.2 4.4 2 5 4.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s-7-6.2-7-11.7a7 7 0 0 1 14 0c0 5.5-7 11.7-7 11.7z"/><circle cx="12" cy="9.8" r="2.6"/></symbol>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 18v3M16 18v3M9 6.5h6"/><circle cx="8" cy="14.5" r=".9" fill="currentColor"/><circle cx="16" cy="14.5" r=".9" fill="currentColor"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M3 18.5h18"/><path d="M5 18.5a7 7 0 0 1 14 0"/><path d="M12 11.5V9M10 9h4"/></symbol>
+    <symbol id="i-fork" viewBox="0 0 24 24"><path d="M4 2.5v6.5a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 10 9V2.5M7 2.5v19"/><path d="M20 15V2.5a5 5 0 0 0-5 5V13c0 1.1.9 2 2 2h3zm0 0v6.5"/></symbol>
+    <symbol id="i-glass" viewBox="0 0 24 24"><path d="M8 21.5h8M12 15v6.5M7 10h10"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-7.5H9C7.5 6 7 8 7 10a5 5 0 0 0 5 5z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6.5 6.5 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.9 18.8 7 20.2 7 22M14 14.7V17c0 .6.5 1 1 1.2 1.1.6 2 2 2 3.8"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24"><path d="M8.5 10 5.5 2.5h4L12 8l2.5-5.5h4L15.5 10"/><circle cx="12" cy="15.5" r="6"/><text x="12" y="18.4" text-anchor="middle" font-size="8.5" font-weight="800" fill="currentColor" stroke="none" font-family="Manrope, system-ui, sans-serif">2</text></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22M18 2l4 4-4 4M2 6h1.9c1.5 0 2.9.9 3.6 2.2M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8M18 14l4 4-4 4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+
+    <!-- umbrella pine (origin at trunk base) -->
+    <g id="pine">
+      <path d="M0 0 C1 -22 5 -40 12 -54" stroke="#2a2018" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M8 -46 C2 -52 -6 -56 -14 -58" stroke="#2a2018" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M-44 -60 C-36 -78 -8 -88 22 -86 C50 -84 72 -76 70 -62 C48 -52 -22 -50 -44 -60Z" fill="#1b472b"/>
+      <path d="M-20 -78 C-6 -92 26 -96 48 -86 C36 -78 -2 -74 -20 -78Z" fill="#24593a"/>
+    </g>
+    <g id="flagpin">
+      <line x1="0" y1="0" x2="0" y2="-34" stroke="#fbf6ea" stroke-width="1.6"/>
+      <path d="M1 -33 L17 -28 L1 -23Z" fill="#c8102e"/>
+      <ellipse cx="0" cy="0" rx="3" ry="1.2" fill="#0b2a1f"/>
+    </g>
+
+    <!-- gradients -->
+    <linearGradient id="gOceanSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b6672"/><stop offset=".55" stop-color="#f1d6a2"/></linearGradient>
+    <linearGradient id="gNorthSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fc8c4"/><stop offset=".6" stop-color="#eef0dc"/></linearGradient>
+    <linearGradient id="gSouthSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6b06f"/><stop offset=".6" stop-color="#f8e6bf"/></linearGradient>
+    <linearGradient id="gPinhalSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb2b0"/><stop offset=".6" stop-color="#e8ecd6"/></linearGradient>
+    <linearGradient id="gTravelSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f5560"/><stop offset=".62" stop-color="#f0cf98"/></linearGradient>
+
+    <!-- card illustrations (300 x 170) -->
+    <g id="art-ocean">
+      <rect width="300" height="170" fill="url(#gOceanSky)"/>
+      <circle cx="205" cy="88" r="17" fill="#fff0c9"/>
+      <rect y="90" width="300" height="80" fill="#2e6f7a"/>
+      <g fill="#ffe2a6" opacity=".7"><rect x="190" y="94" width="30" height="1.6" rx=".8"/><rect x="196" y="99" width="18" height="1.4" rx=".7"/><rect x="186" y="104" width="38" height="1.2" rx=".6"/></g>
+      <path d="M222 104 C240 88 268 80 300 77 L300 130 L215 130Z" fill="#c9763f"/>
+      <path d="M222 104 C240 88 268 80 300 77 L300 83 C270 86 244 93 228 108Z" fill="#5f7f3a"/>
+      <path d="M0 126 C70 110 150 114 220 128 C250 134 280 132 300 128 L300 170 L0 170Z" fill="#3f7a45"/>
+      <path d="M0 150 C80 138 180 142 300 154 L300 170 L0 170Z" fill="#1f5230"/>
+      <ellipse cx="112" cy="128" rx="36" ry="6" fill="#6fae60"/>
+      <use href="#flagpin" transform="translate(120 128)"/>
+      <use href="#pine" transform="translate(30 122) scale(.4)"/>
+    </g>
+    <g id="art-north">
+      <rect width="300" height="170" fill="url(#gNorthSky)"/>
+      <path d="M0 96 C50 84 110 82 160 90 C210 98 260 88 300 84 L300 170 L0 170Z" fill="#88b08f"/>
+      <use href="#pine" transform="translate(44 104) scale(.42)"/>
+      <use href="#pine" transform="translate(78 100) scale(.32)"/>
+      <use href="#pine" transform="translate(262 98) scale(.4)"/>
+      <path d="M0 116 C60 104 140 102 200 110 C240 116 270 112 300 108 L300 170 L0 170Z" fill="#4f8d50"/>
+      <path d="M150 142 C170 128 230 126 262 134 C284 140 270 152 236 154 C196 157 140 154 150 142Z" fill="#4e94a2"/>
+      <path d="M170 139 C192 133 226 132 246 136" stroke="#d5ecec" stroke-width="1.5" fill="none" opacity=".7"/>
+      <path d="M0 152 C70 142 130 148 170 162 L170 170 L0 170Z" fill="#2c6a3c"/>
+      <ellipse cx="92" cy="130" rx="32" ry="5.5" fill="#76b566"/>
+      <use href="#flagpin" transform="translate(98 130)"/>
+    </g>
+    <g id="art-south">
+      <rect width="300" height="170" fill="url(#gSouthSky)"/>
+      <circle cx="70" cy="70" r="20" fill="#fff1cf" opacity=".95"/>
+      <path d="M0 92 C60 80 130 84 190 92 C240 98 270 92 300 88 L300 170 L0 170Z" fill="#a7ae78"/>
+      <use href="#pine" transform="translate(232 108) scale(.45)"/>
+      <use href="#pine" transform="translate(262 104) scale(.34)"/>
+      <path d="M0 110 C80 98 160 100 230 112 C260 117 280 116 300 114 L300 170 L0 170Z" fill="#5a944f"/>
+      <path d="M18 142 C38 130 98 128 126 136 C144 142 126 154 90 155 C52 156 8 152 18 142Z" fill="#5a9aa6"/>
+      <path d="M200 142 C210 135 236 134 246 140 C250 144 238 148 222 148 C206 148 196 146 200 142Z" fill="#f0dcae"/>
+      <ellipse cx="172" cy="129" rx="32" ry="5.5" fill="#7fbc6c"/>
+      <use href="#flagpin" transform="translate(178 129)"/>
+      <path d="M0 160 C90 152 200 154 300 162 L300 170 L0 170Z" fill="#2a6539"/>
+    </g>
+    <g id="art-pinhal">
+      <rect width="300" height="170" fill="url(#gPinhalSky)"/>
+      <path d="M0 100 C80 88 180 90 300 96 L300 170 L0 170Z" fill="#7aa384"/>
+      <use href="#pine" transform="translate(16 104) scale(.3)"/>
+      <use href="#pine" transform="translate(58 100) scale(.36)"/>
+      <use href="#pine" transform="translate(104 102) scale(.28)"/>
+      <use href="#pine" transform="translate(150 98) scale(.34)"/>
+      <use href="#pine" transform="translate(196 100) scale(.3)"/>
+      <use href="#pine" transform="translate(240 98) scale(.36)"/>
+      <use href="#pine" transform="translate(284 102) scale(.3)"/>
+      <path d="M0 124 C70 116 150 118 220 126 C250 130 280 128 300 126 L300 170 L0 170Z" fill="#4a8a4c"/>
+      <use href="#pine" transform="translate(34 136) scale(.72)"/>
+      <use href="#pine" transform="translate(268 134) scale(.62)"/>
+      <ellipse cx="150" cy="142" rx="34" ry="6" fill="#72b262"/>
+      <use href="#flagpin" transform="translate(156 142)"/>
+      <path d="M0 160 C100 152 200 154 300 162 L300 170 L0 170Z" fill="#245a33"/>
+    </g>
+    <g id="art-travel">
+      <rect width="300" height="170" fill="url(#gTravelSky)"/>
+      <circle cx="226" cy="104" r="18" fill="#fff0c9"/>
+      <rect y="104" width="300" height="66" fill="#2e6f7a"/>
+      <path d="M24 46 C80 34 140 38 196 56" stroke="#fff" stroke-width="2" stroke-dasharray="4 7" fill="none" opacity=".55" stroke-linecap="round"/>
+      <g transform="translate(212 60) rotate(16) scale(1.3)" fill="#fbf6ea">
+        <path d="M-15 0 L10 -1.6 C14 -1.6 16.5 0 16.5 0 C16.5 0 14 1.6 10 1.6Z"/>
+        <path d="M1 -1 L-6 -11 L-2.5 -11 L6 -1Z"/><path d="M1 1 L-6 11 L-2.5 11 L6 1Z"/>
+        <path d="M-12 -.5 L-16 -6 L-13.5 -6 L-9.5 -.5Z"/>
+      </g>
+      <path d="M0 118 C50 110 110 112 150 120 C168 124 182 132 192 146 L192 170 L0 170Z" fill="#c9763f"/>
+      <path d="M0 118 C50 110 110 112 150 120 C160 122 168 125 175 129 L170 132 C162 128 156 126 150 125 C110 118 50 116 0 124Z" fill="#5f7f3a"/>
+      <path d="M0 144 C80 134 180 138 300 150 L300 170 L0 170Z" fill="#3f7a45"/>
+      <use href="#pine" transform="translate(40 148) scale(.5)"/>
+      <path d="M0 162 C100 156 200 158 300 166 L300 170 L0 170Z" fill="#1f5230"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Portugal Golf Trip — back to top">
+      <span class="brand-mark"><span>PT</span></span>
+      <span class="brand-text">Portugal <em>Golf Trip</em></span>
+    </a>
+    <nav aria-label="Sections">
+      <ul class="nav-links">
+        <li><a href="#golf">Rounds</a></li>
+        <li><a href="#itinerary">Itinerary</a></li>
+        <li><a href="#pot">The pot</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#info">Good to know</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold btn-sm" href="#itinerary">Tee times</a>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <svg class="hero-art" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0e3440"/>
+        <stop offset=".34" stop-color="#2b6672"/>
+        <stop offset=".52" stop-color="#8fb8b3"/>
+        <stop offset=".6" stop-color="#f1dcae"/>
+      </linearGradient>
+      <radialGradient id="glow" cx="900" cy="590" r="560" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#ffe2a6" stop-opacity=".95"/>
+        <stop offset=".16" stop-color="#f9c47e" stop-opacity=".6"/>
+        <stop offset=".45" stop-color="#e89a62" stop-opacity=".2"/>
+        <stop offset="1" stop-color="#e89a62" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sea" x1="0" y1="600" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#6aa3a6"/>
+        <stop offset=".22" stop-color="#2f707b"/>
+        <stop offset="1" stop-color="#0f3c45"/>
+      </linearGradient>
+      <linearGradient id="cliff" x1="0" y1="476" x2="0" y2="700" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#e3a061"/>
+        <stop offset=".5" stop-color="#c2703a"/>
+        <stop offset="1" stop-color="#8e4824"/>
+      </linearGradient>
+      <linearGradient id="hill1" x1="0" y1="700" x2="0" y2="860" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4f8a50"/><stop offset="1" stop-color="#346d3c"/></linearGradient>
+      <linearGradient id="hill2" x1="0" y1="780" x2="0" y2="950" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2f6d3d"/><stop offset="1" stop-color="#1d4d2c"/></linearGradient>
+      <linearGradient id="hill3" x1="0" y1="880" x2="0" y2="1000" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#163c27"/><stop offset="1" stop-color="#0b2a1f"/></linearGradient>
+    </defs>
+    <rect width="1600" height="1000" fill="url(#sky)"/>
+    <rect width="1600" height="1000" fill="url(#glow)"/>
+    <g fill="#fff3dc" opacity=".22">
+      <ellipse cx="380" cy="360" rx="300" ry="9"/><ellipse cx="540" cy="392" rx="190" ry="6"/>
+      <ellipse cx="1280" cy="300" rx="260" ry="8"/><ellipse cx="1150" cy="332" rx="150" ry="5"/>
+    </g>
+    <g stroke="#0e3440" stroke-width="2.2" fill="none" opacity=".45" stroke-linecap="round">
+      <path d="M660 300 q9 -7 18 0 q9 -7 18 0"/><path d="M712 326 q6 -5 12 0 q6 -5 12 0"/><path d="M630 338 q5 -4 10 0 q5 -4 10 0"/>
+    </g>
+    <circle cx="900" cy="590" r="56" fill="#fff0c9"/>
+    <path d="M0 586 C90 572 190 566 290 574 C360 580 420 590 470 600 L0 600Z" fill="#6f8f88" opacity=".75"/>
+    <path d="M0 594 C120 586 240 586 330 594 L360 600 L0 600Z" fill="#587a74" opacity=".8"/>
+    <rect y="600" width="1600" height="400" fill="url(#sea)"/>
+    <g class="shimmer" fill="#ffe2a6">
+      <rect x="840" y="606" width="120" height="3" rx="1.5"/><rect x="862" y="618" width="76" height="3" rx="1.5"/>
+      <rect x="822" y="632" width="156" height="2.5" rx="1.25"/><rect x="872" y="648" width="56" height="2.5" rx="1.25"/>
+      <rect x="846" y="666" width="108" height="2" rx="1"/><rect x="882" y="686" width="36" height="2" rx="1"/>
+    </g>
+    <g fill="#fff" opacity=".14">
+      <rect x="180" y="640" width="90" height="2" rx="1"/><rect x="420" y="660" width="60" height="2" rx="1"/><rect x="640" y="626" width="70" height="2" rx="1"/>
+    </g>
+    <!-- Algarve cliffs -->
+    <path d="M985 640 L992 612 C1000 596 1012 584 1030 574 C1060 556 1090 540 1130 528 C1190 510 1260 500 1330 492 C1420 482 1510 478 1600 476 L1600 720 L985 720Z" fill="url(#cliff)"/>
+    <g stroke="#93491f" stroke-width="3" opacity=".3" stroke-linecap="round">
+      <path d="M1060 570 L1066 640"/><path d="M1120 540 L1112 630"/><path d="M1190 520 L1200 626"/><path d="M1270 506 L1262 622"/><path d="M1350 496 L1360 628"/><path d="M1440 486 L1432 630"/><path d="M1530 480 L1538 634"/>
+    </g>
+    <path d="M1030 574 C1060 556 1090 540 1130 528 C1190 510 1260 500 1330 492 C1420 482 1510 478 1600 476 L1600 492 C1510 494 1420 498 1330 507 C1260 515 1190 524 1135 541 C1095 553 1062 568 1036 584Z" fill="#5f7f3a"/>
+    <use href="#pine" transform="translate(1210 516) scale(.36)"/>
+    <use href="#pine" transform="translate(1262 508) scale(.3)"/>
+    <use href="#pine" transform="translate(1520 486) scale(.42)"/>
+    <path d="M930 642 L936 618 C940 606 954 604 960 614 L968 642Z" fill="#b8673a"/>
+    <path d="M880 724 C910 690 935 662 960 650 C1060 634 1200 628 1340 634 C1440 638 1530 644 1600 642 L1600 730 L880 730Z" fill="#efcf98"/>
+    <path d="M900 700 C925 672 942 658 960 650 C1060 634 1200 628 1340 634 C1440 638 1530 644 1600 642" stroke="#fff6e0" stroke-width="3" fill="none" opacity=".75"/>
+    <!-- fairways -->
+    <path d="M0 735 C160 705 330 698 500 712 C640 724 760 742 900 738 C1020 735 1120 716 1240 712 C1380 708 1500 720 1600 716 L1600 1000 L0 1000Z" fill="url(#hill1)"/>
+    <use href="#pine" transform="translate(150 722) scale(1.25)"/>
+    <use href="#pine" transform="translate(1420 718) scale(1.05)"/>
+    <use href="#pine" transform="translate(1300 714) scale(.7)"/>
+    <path d="M0 830 C200 790 420 778 640 792 C820 804 960 826 1120 818 C1300 808 1460 786 1600 790 L1600 1000 L0 1000Z" fill="url(#hill2)"/>
+    <path d="M520 824 C540 810 600 806 630 816 C640 822 620 830 590 832 C560 834 530 832 520 824Z" fill="#ecd9a8"/>
+    <ellipse cx="760" cy="822" rx="150" ry="22" fill="#69a85c"/>
+    <ellipse cx="760" cy="820" rx="118" ry="14" fill="#7bb96a" opacity=".7"/>
+    <ellipse cx="792" cy="820" rx="5" ry="2" fill="#0b2a1f"/>
+    <line x1="792" y1="820" x2="792" y2="676" stroke="#fbf6ea" stroke-width="3"/>
+    <path class="flag-wave" d="M793 678 C815 682 838 690 866 690 C846 700 820 704 793 712Z" fill="#c8102e"/>
+    <path d="M0 920 C260 880 520 884 780 904 C1040 924 1300 916 1600 880 L1600 1000 L0 1000Z" fill="url(#hill3)"/>
+  </svg>
+  <!-- Photo: Vale do Lobo Ocean Course (valedolobo.com). The illustration above shows if it ever fails to load. -->
+  <img class="hero-photo" alt="" fetchpriority="high" referrerpolicy="no-referrer" onerror="this.remove()"
+       src="https://www.valedolobo.com/wp-content/uploads/2024/05/20170310_VDL_GeneralGolf_010_CCV-1536x1024.webp"
+       srcset="https://www.valedolobo.com/wp-content/uploads/2024/05/20170310_VDL_GeneralGolf_010_CCV-1536x1024.webp 1536w, https://www.valedolobo.com/wp-content/uploads/2024/05/20170310_VDL_GeneralGolf_010_CCV-scaled.webp 2560w"
+       sizes="100vw">
+
+  <div class="badge" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <defs><path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+      <text><textPath href="#circ" textLength="500" lengthAdjust="spacing">GOOD GOLF • GREAT COMPANY • PORTUGAL • </textPath></text>
+    </svg>
+    <span class="badge-core"><svg class="i"><use href="#i-flag"/></svg></span>
+  </div>
+
+  <div class="wrap hero-inner">
+    <p class="eyebrow">2–6 June 2027<span class="eb-extra">&nbsp;· The one-page go-to guide</span></p>
+    <h1>Portugal <em>Golf Trip</em></h1>
+    <p class="hero-lede">Five days, four rounds and twelve of us on the Algarve, based at Vale do Lobo. Tee times, transfers, dinners and the pot — all in one place.</p>
+    <div class="hero-row">
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#itinerary">See the itinerary <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#pot">€600 up for grabs each day</a>
+      </div>
+      <div class="countdown" id="countdown" aria-live="off">
+        <span class="cd-label"><svg class="i"><use href="#i-plane"/></svg>Wheels down in</span>
+        <div class="cd">
+          <div><b data-u="d">–</b><small>Days</small></div>
+          <div><b data-u="h">–</b><small>Hrs</small></div>
+          <div><b data-u="m">–</b><small>Mins</small></div>
+          <div><b data-u="s">–</b><small>Secs</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><svg class="i"><use href="#i-cal"/></svg><div><span>When</span><b>2–6 June 2027</b></div></div>
+      <div class="stat"><svg class="i"><use href="#i-flag"/></svg><div><span>Golf</span><b>4 rounds</b></div></div>
+      <div class="stat"><svg class="i"><use href="#i-users"/></svg><div><span>Squad</span><b>12 travellers</b></div></div>
+      <div class="stat"><svg class="i"><use href="#i-pin"/></svg><div><span>Base</span><b>Vale do Lobo</b></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROUNDS ================= -->
+<section class="section" id="golf">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="kicker"><b>01</b> The golf</span>
+        <h2>Four rounds on the <em>Algarve</em></h2>
+      </div>
+      <p class="reveal" style="--i:1">Twelve players over three tee times each round. Tap a course for the full day plan.</p>
+    </div>
+    <div class="rounds">
+      <a class="round reveal" href="#itinerary" data-goto="thu" style="--i:0">
+        <div class="round-art"><svg viewBox="0 0 300 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-ocean"/></svg><img loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" alt="Vale do Lobo Ocean Course green with the sea behind" src="https://www.valedolobo.com/wp-content/uploads/2024/05/20220604_WVC_Golf_Tournament_067_FHD-1-1024x683.webp"><span class="go"><svg class="i"><use href="#i-arrow"/></svg></span></div>
+        <div class="round-body">
+          <div class="round-top"><span>Round 01</span><span class="round-day">Thu 3 Jun</span></div>
+          <h3>Vale do Lobo</h3>
+          <p class="sub">Ocean Course</p>
+          <div class="tee-row"><span class="tee">15:40</span><span class="tee">15:50</span><span class="tee">16:00</span></div>
+          <dl>
+            <div><dt>Getting there</dt><dd>At base</dd></div>
+            <div><dt>Evening</dt><dd>VDL, then Cheeky Pup</dd></div>
+          </dl>
+        </div>
+      </a>
+      <a class="round reveal" href="#itinerary" data-goto="fri" style="--i:1">
+        <div class="round-art"><svg viewBox="0 0 300 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-north"/></svg><img loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" alt="Lake beside a green on the Quinta do Lago North Course" src="https://d14k3pdvyik68f.cloudfront.net/uploads/media/7f971c161e7522a4f0ca8064626acdab_S3CgwVc.jpg"><span class="go"><svg class="i"><use href="#i-arrow"/></svg></span></div>
+        <div class="round-body">
+          <div class="round-top"><span>Round 02</span><span class="round-day">Fri 4 Jun</span></div>
+          <h3>Quinta North</h3>
+          <p class="sub">Quinta do Lago</p>
+          <div class="tee-row"><span class="tee">11:04</span><span class="tee">11:14</span><span class="tee">11:24</span></div>
+          <dl>
+            <div><dt>Meet</dt><dd>Reception 09:45</dd></div>
+            <div><dt>Evening</dt><dd>Bovino Steakhouse</dd></div>
+          </dl>
+        </div>
+      </a>
+      <a class="round reveal" href="#itinerary" data-goto="sat" style="--i:2">
+        <div class="round-art"><svg viewBox="0 0 300 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-south"/></svg><img loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" alt="Aerial view of the Quinta do Lago South Course, lake and coastline" src="https://d14k3pdvyik68f.cloudfront.net/uploads/media/cache/f880357e8125455735818bd1a1270ebc_mobile_slider.jpg"><span class="go"><svg class="i"><use href="#i-arrow"/></svg></span></div>
+        <div class="round-body">
+          <div class="round-top"><span>Round 03</span><span class="round-day">Sat 5 Jun</span></div>
+          <h3>Quinta South</h3>
+          <p class="sub">Quinta do Lago</p>
+          <div class="tee-row"><span class="tee">12:16</span><span class="tee">12:26</span><span class="tee">12:36</span></div>
+          <dl>
+            <div><dt>Meet</dt><dd>Reception 10:15</dd></div>
+            <div><dt>Evening</dt><dd>Shack / Cheeky Pup</dd></div>
+          </dl>
+        </div>
+      </a>
+      <a class="round reveal" href="#itinerary" data-goto="sun" style="--i:3">
+        <div class="round-art"><svg viewBox="0 0 300 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-pinhal"/></svg><img loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" alt="Aerial view of Pinhal fairways lined with umbrella pines" src="https://www.vilamouragolf.com/wp-content/uploads/2025/01/Pinhal-DJI_0520-1024x767.jpg"><span class="go"><svg class="i"><use href="#i-arrow"/></svg></span></div>
+        <div class="round-body">
+          <div class="round-top"><span>Round 04</span><span class="round-day">Sun 6 Jun</span></div>
+          <h3>Pinhal</h3>
+          <p class="sub">Vilamoura</p>
+          <div class="tee-row"><span class="tee">09:10</span><span class="tee">09:20</span><span class="tee">09:30</span></div>
+          <dl>
+            <div><dt>Meet</dt><dd>Reception 08:00</dd></div>
+            <div><dt>Evening</dt><dd>Thai Beach / Moura</dd></div>
+          </dl>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ITINERARY ================= -->
+<section class="section itin" id="itinerary">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="kicker"><b>02</b> Day by day</span>
+        <h2>The <em>itinerary</em></h2>
+      </div>
+      <p class="reveal" style="--i:1">Wednesday 2 to Sunday 6 June 2027. Pick a day for meet times, tee times, transfers and where we're eating.</p>
+    </div>
+
+    <div class="day-tabs reveal" role="tablist" aria-label="Trip days">
+      <button class="tab" role="tab" id="tab-wed" data-day="wed" aria-controls="day-panel"><b>Wed</b><span>2 Jun</span></button>
+      <button class="tab" role="tab" id="tab-thu" data-day="thu" aria-controls="day-panel"><b>Thu</b><span>3 Jun</span></button>
+      <button class="tab" role="tab" id="tab-fri" data-day="fri" aria-controls="day-panel"><b>Fri</b><span>4 Jun</span></button>
+      <button class="tab" role="tab" id="tab-sat" data-day="sat" aria-controls="day-panel"><b>Sat</b><span>5 Jun</span></button>
+      <button class="tab" role="tab" id="tab-sun" data-day="sun" aria-controls="day-panel"><b>Sun</b><span>6 Jun</span></button>
+    </div>
+
+    <div class="panel reveal" id="day-panel" role="tabpanel" tabindex="0">
+      <div class="ph" id="ph"></div>
+      <div class="pl" id="pl"></div>
+    </div>
+
+    <div class="itin-foot">
+      <span><svg class="i"><use href="#i-clock"/></svg>All times local</span>
+      <span><svg class="i"><use href="#i-bell"/></svg>Reception is the meeting point Friday to Sunday</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POT ================= -->
+<section class="section pot" id="pot">
+  <div class="wrap pot-grid">
+    <div class="reveal">
+      <span class="kicker"><b>03</b> The betting pot</span>
+      <h2>€600 up for grabs <em>every day</em></h2>
+      <p class="pot-lede">Everyone puts €200 in. That builds the pot, which is split evenly across the four rounds — so there's something to play for every single day.</p>
+      <div class="figs">
+        <div class="fig"><span>Buy-in</span><b>€200</b><small>each</small></div>
+        <div class="fig"><span>Per round</span><b>€600</b><small>× 4 rounds</small></div>
+        <div class="fig"><span>Total pot</span><b class="count" data-to="2400">€2,400</b><small>12 × €200</small></div>
+      </div>
+    </div>
+    <div class="pot-card reveal" style="--i:1">
+      <h3>How each day pays out</h3>
+      <p>The daily €600 is based on:</p>
+      <div class="prizes">
+        <div class="prize"><span class="pic"><svg class="i"><use href="#i-trophy"/></svg></span><div><b>Winner</b><small>1st place</small></div></div>
+        <div class="prize"><span class="pic"><svg class="i"><use href="#i-medal"/></svg></span><div><b>Runner-up</b><small>2nd place</small></div></div>
+        <div class="prize"><span class="pic"><svg class="i"><use href="#i-target"/></svg></span><div><b>Nearest the pin</b><small>× 2 each round</small></div></div>
+      </div>
+      <div class="daybar">
+        <div><small>Thu 3</small><b>€600</b><span>Vale do Lobo Ocean</span></div>
+        <div><small>Fri 4</small><b>€600</b><span>Quinta North</span></div>
+        <div><small>Sat 5</small><b>€600</b><span>Quinta South</span></div>
+        <div><small>Sun 6</small><b>€600</b><span>Pinhal</span></div>
+      </div>
+      <div class="sum"><span>12 players × €200</span><span>= <b>€2,400</b> = 4 × €600</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLAYERS ================= -->
+<section class="section" id="players">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="kicker"><b>04</b> The squad</span>
+        <h2>Twelve players, <em>one pot</em></h2>
+      </div>
+      <p class="reveal" style="--i:1">Three fourballs a day, ten minutes apart.</p>
+    </div>
+    <ol class="players">
+      <li class="player reveal" style="--i:0"><span class="ball">1</span><b>Mack</b></li>
+      <li class="player reveal" style="--i:1"><span class="ball">2</span><b>Billy E</b></li>
+      <li class="player reveal" style="--i:2"><span class="ball">3</span><b>Tommy</b></li>
+      <li class="player reveal" style="--i:3"><span class="ball">4</span><b>Jimmy</b></li>
+      <li class="player reveal" style="--i:4"><span class="ball">5</span><b>Joe</b></li>
+      <li class="player reveal" style="--i:5"><span class="ball">6</span><b>Michael</b></li>
+      <li class="player reveal" style="--i:0"><span class="ball">7</span><b>JP</b></li>
+      <li class="player reveal" style="--i:1"><span class="ball">8</span><b>Kelsey</b></li>
+      <li class="player reveal" style="--i:2"><span class="ball">9</span><b>Sam</b></li>
+      <li class="player reveal" style="--i:3"><span class="ball">10</span><b>Hickory</b></li>
+      <li class="player reveal" style="--i:4"><span class="ball">11</span><b>Tom G</b></li>
+      <li class="player reveal" style="--i:5"><span class="ball">12</span><b>Dave</b></li>
+    </ol>
+    <div class="draw reveal">
+      <div class="draw-head">
+        <div>
+          <h3>Fancy a random fourball draw?</h3>
+          <p>Just for fun. These aren't the official groups.</p>
+        </div>
+        <button class="btn btn-dark" id="drawBtn" type="button"><svg class="i"><use href="#i-shuffle"/></svg><span class="lbl">Draw fourballs</span></button>
+      </div>
+      <div class="groups" id="groups" hidden aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFO ================= -->
+<section class="section info" id="info">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="reveal">
+        <span class="kicker"><b>05</b> Good to know</span>
+        <h2>The <em>small print</em></h2>
+      </div>
+    </div>
+    <div class="info-grid">
+      <article class="info-card reveal" style="--i:0">
+        <span class="ic"><svg class="i"><use href="#i-bell"/></svg></span>
+        <h3>Meeting point</h3>
+        <p><b>Reception</b> is the meeting point Friday to Sunday. Check each day's meet time in the itinerary.</p>
+      </article>
+      <article class="info-card reveal" style="--i:1">
+        <span class="ic"><svg class="i"><use href="#i-clock"/></svg></span>
+        <h3>All times local</h3>
+        <p>Every time on this page is <b>Portugal time</b>, which is the same as the UK.</p>
+      </article>
+      <article class="info-card reveal" style="--i:2">
+        <span class="ic"><svg class="i"><use href="#i-sliders"/></svg></span>
+        <h3>Handicaps</h3>
+        <p>If you haven't posted <b>10 rounds in 2027</b> into MyEG, your handicap will be set by the committee.</p>
+      </article>
+      <article class="info-card reveal" style="--i:3">
+        <span class="ic"><svg class="i"><use href="#i-cal"/></svg></span>
+        <h3>Dates &amp; flights</h3>
+        <p>First arrivals land <b>Wednesday 2 June 2027</b>; the final round is Sunday 6 June. Flight numbers aren't listed here yet.</p>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <p class="sr-only">Sun, fairways, friends — €600 to play for each day.</p>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Sun</span><i>✦</i><span>Fairways</span><i>✦</i><span>Friends</span><i>✦</i><span>€600 to play for each day</span><i>✦</i>
+      <span>Sun</span><i>✦</i><span>Fairways</span><i>✦</i><span>Friends</span><i>✦</i><span>€600 to play for each day</span><i>✦</i>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p class="sign">Same fairways,<br><em>new memories.</em></p>
+    <div class="foot-meta">
+      <span>Portugal Golf Trip · 2–6 June 2027 · Base: Vale do Lobo</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+  <p class="wrap credit">Course photography from <a href="https://www.valedolobo.com/en/golf-course/ocean-golf-course/">Vale do Lobo</a>, <a href="https://www.quintadolago.com/en/golf/overview/">Quinta do Lago</a> and <a href="https://www.vilamouragolf.com/en/golf-courses/pinhal/">Vilamoura Golf</a>.</p>
+  <div class="pt-stripe"></div>
+</footer>
+
+<script>
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const icon = n => `<svg class="i" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+
+  /* nav state */
+  const nav = $('#nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 40);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* itinerary data — straight from the trip sheet */
+  const DAYS = {
+    wed: { n: 1, name: 'Wednesday', date: '2027-06-02', dm: '2 June', art: 'travel', title: 'Arrival day', sub: 'For some of the group',
+      photo: 'https://www.valedolobo.com/wp-content/uploads/2024/05/Vale-do-Lobo-Praca_restaurant-1024x683.webp', alt: 'The Praça at Vale do Lobo in the evening',
+      note: 'No golf today — settle in at Vale do Lobo. The pot opens Thursday.',
+      events: [
+        ['10:40', 'plane', 'Flight lands', 'Wednesday arrivals'],
+        ['12:00', 'bus', 'Pick-up', 'Transfer to Vale do Lobo'],
+        ['Eve', 'moon', 'Open evening', 'Nothing booked — your call']
+      ] },
+    thu: { n: 2, name: 'Thursday', date: '2027-06-03', dm: '3 June', art: 'ocean', round: 1, title: 'Vale do Lobo', sub: 'Ocean Course · at base',
+      photo: 'https://www.valedolobo.com/wp-content/uploads/2024/05/20220604_WVC_Golf_Tournament_067_FHD-1-1024x683.webp', alt: 'Vale do Lobo Ocean Course green with the sea behind',
+      flag: 'Arrival day for some of the group', tees: ['15:40', '15:50', '16:00'],
+      events: [
+        ['11:50', 'plane', 'Flight lands', 'Thursday arrivals'],
+        ['13:00', 'bus', 'Mini-bus', 'Transfer to Vale do Lobo'],
+        ['15:40', 'flag', 'Tee times', '15:40 · 15:50 · 16:00', 1],
+        ['22:00', 'glass', 'Eat at VDL, then Cheeky Pup', 'Evening']
+      ] },
+    fri: { n: 3, name: 'Friday', date: '2027-06-04', dm: '4 June', art: 'north', round: 2, title: 'Quinta North', sub: 'Quinta do Lago',
+      photo: 'https://d14k3pdvyik68f.cloudfront.net/uploads/media/7f971c161e7522a4f0ca8064626acdab_S3CgwVc.jpg', alt: 'Lake beside a green on the Quinta do Lago North Course',
+      tees: ['11:04', '11:14', '11:24'],
+      events: [
+        ['09:45', 'bell', 'Meet at reception', 'Reception is the meeting point'],
+        ['11:04', 'flag', 'Tee times', '11:04 · 11:14 · 11:24', 1],
+        ['17:00', 'bus', 'Back to base', 'Quinta → Vale do Lobo'],
+        ['20:00', 'fork', 'Bovino Steakhouse', 'Dinner']
+      ] },
+    sat: { n: 4, name: 'Saturday', date: '2027-06-05', dm: '5 June', art: 'south', round: 3, title: 'Quinta South', sub: 'Quinta do Lago',
+      photo: 'https://d14k3pdvyik68f.cloudfront.net/uploads/media/cache/f880357e8125455735818bd1a1270ebc_mobile_slider.jpg', alt: 'Aerial view of the Quinta do Lago South Course, lake and coastline',
+      tees: ['12:16', '12:26', '12:36'],
+      events: [
+        ['10:15', 'bell', 'Meet at reception', 'Reception is the meeting point'],
+        ['12:16', 'flag', 'Tee times', '12:16 · 12:26 · 12:36', 1],
+        ['18:00', 'bus', 'Back to base', 'Quinta → Vale do Lobo'],
+        ['18:00', 'glass', 'Shack / Cheeky Pup', 'Evening']
+      ] },
+    sun: { n: 5, name: 'Sunday', date: '2027-06-06', dm: '6 June', art: 'pinhal', round: 4, title: 'Pinhal', sub: 'Vilamoura',
+      photo: 'https://www.vilamouragolf.com/wp-content/uploads/2025/01/Pinhal-DJI_0520-1024x767.jpg', alt: 'Aerial view of Pinhal fairways lined with umbrella pines',
+      tees: ['09:10', '09:20', '09:30'],
+      events: [
+        ['08:00', 'bell', 'Meet at reception', 'Early start for the final round'],
+        ['09:10', 'flag', 'Tee times', '09:10 · 09:20 · 09:30', 1],
+        ['14:00', 'bus', 'Back to base', 'Pinhal → Vale do Lobo'],
+        ['16:00', 'glass', 'Thai Beach / Moura', 'Evening']
+      ] }
+  };
+
+  const ORDER = Object.keys(DAYS);
+  const ph = $('#ph'), pl = $('#pl');
+  const tabs = $$('.tab');
+  pl.addEventListener('click', e => {
+    const b = e.target.closest('.daylink');
+    if (b) select(b.dataset.day);
+  });
+
+  function render(id) {
+    const d = DAYS[id];
+    const round = d.round;
+    const idx = ORDER.indexOf(id), prev = ORDER[idx - 1], next = ORDER[idx + 1];
+    ph.innerHTML = `
+      <div class="ph-art"><svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-${d.art}"/></svg>${d.photo ? `<img src="${d.photo}" alt="${d.alt}" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}</div>
+      <div class="ph-body">
+        <div class="ph-meta"><span>Day ${d.n} · ${d.name.slice(0, 3)} ${d.dm}</span><span class="pill">${round ? (round === 4 ? 'Final round' : `Round ${round} of 4`) : 'Travel day'}</span></div>
+        <h3>${d.title}</h3>
+        <p class="ph-sub">${d.sub}</p>
+        ${d.flag ? `<span class="ph-flag">${icon('plane')}${d.flag}</span>` : ''}
+        ${round ? `
+          <div class="tees">
+            <div class="label"><span>Tee times</span><span>3 fourballs</span></div>
+            <div class="tee-grid">${d.tees.map((t, i) => `<div class="tee-card"><small>Tee ${i + 1}</small><b>${t}</b></div>`).join('')}</div>
+          </div>
+          <div class="pot-pill"><b>€600</b><span>up for grabs today — winner, runner-up and 2 × nearest the pin</span></div>`
+        : `<p class="ph-note">${d.note}</p>`}
+      </div>`;
+    pl.innerHTML = `
+      <div class="pl-head"><h4>Run of the day</h4><span>${d.name} ${d.dm}</span></div>
+      <ol class="tl">
+        ${d.events.map(([t, ic, h, p, key]) => `
+          <li class="${key ? 'key' : ''}">
+            <time>${t}</time>
+            <span class="ic">${icon(ic)}</span>
+            <div><h5>${h}</h5><p>${p}</p></div>
+          </li>`).join('')}
+      </ol>
+      <div class="pl-nav">
+        ${prev ? `<button class="daylink prev" type="button" data-day="${prev}">${icon('arrow')}${DAYS[prev].name}</button>` : ''}
+        ${next ? `<button class="daylink next" type="button" data-day="${next}">Next: ${DAYS[next].name}${icon('arrow')}</button>` : ''}
+      </div>`;
+    if (!reduce) [ph, pl].forEach(el => { el.classList.remove('swap'); void el.offsetWidth; el.classList.add('swap'); });
+  }
+
+  function select(id, focus) {
+    tabs.forEach(t => {
+      const on = t.dataset.day === id;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      if (on) {
+        $('#day-panel').setAttribute('aria-labelledby', t.id);
+        if (focus) t.focus({ preventScroll: true });
+        // keep the active tab visible inside the (horizontally scrollable) tab bar without moving the page
+        const bar = t.parentElement, l = t.offsetLeft, r = l + t.offsetWidth;
+        if (l < bar.scrollLeft) bar.scrollLeft = l - 6;
+        else if (r > bar.scrollLeft + bar.clientWidth) bar.scrollLeft = r - bar.clientWidth + 6;
+      }
+    });
+    render(id);
+  }
+
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t.dataset.day));
+    t.addEventListener('keydown', e => {
+      let n = null;
+      if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
+      if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+      if (e.key === 'Home') n = 0;
+      if (e.key === 'End') n = tabs.length - 1;
+      if (n !== null) { e.preventDefault(); select(tabs[n].dataset.day, true); }
+    });
+  });
+
+  $$('[data-goto]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    select(a.dataset.goto);
+    $('#itinerary').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+  }));
+
+  /* open on today's tab during the trip (Portugal time), otherwise Wednesday */
+  const todayISO = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Lisbon', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  const todayId = ORDER.find(k => DAYS[k].date === todayISO);
+  if (todayId) $(`#tab-${todayId} span`).textContent = 'Today';
+  select(todayId || 'wed');
+
+  /* countdown to the first flight landing: Wed 2 June 2027, 10:40 Portugal time (UTC+1) */
+  const ARRIVE = Date.parse('2027-06-02T10:40:00+01:00');
+  const END = Date.parse('2027-06-07T00:00:00+01:00');
+  const cd = $('#countdown');
+  const pad = n => String(n).padStart(2, '0');
+  const setU = (u, v) => { const el = cd.querySelector(`[data-u="${u}"]`); if (el && el.textContent !== String(v)) el.textContent = v; };
+  function tick() {
+    const now = Date.now();
+    if (now >= END) { cd.innerHTML = `<span class="cd-label">${icon('flag')}2–6 June 2027</span><p class="cd-msg">That's a <em>wrap.</em></p>`; return; }
+    if (now >= ARRIVE) { cd.innerHTML = `<span class="cd-label">${icon('flag')}We're in Portugal</span><p class="cd-msg">Day ${todayId ? DAYS[todayId].n : 1} <em>of 5</em></p>`; return; }
+    let s = Math.floor((ARRIVE - now) / 1000);
+    const d = Math.floor(s / 86400); s %= 86400;
+    const h = Math.floor(s / 3600); s %= 3600;
+    const m = Math.floor(s / 60); s %= 60;
+    setU('d', d); setU('h', pad(h)); setU('m', pad(m)); setU('s', pad(s));
+    setTimeout(tick, 1000 - (now % 1000));
+  }
+  tick();
+
+  /* reveal on scroll */
+  const revealEls = $$('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    const io = new IntersectionObserver(entries => entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else revealEls.forEach(el => el.classList.add('in'));
+
+  /* count-up for the pot */
+  const counter = $('.count');
+  if (counter && 'IntersectionObserver' in window && !reduce) {
+    const to = +counter.dataset.to;
+    const co = new IntersectionObserver(([en]) => {
+      if (!en.isIntersecting) return;
+      co.disconnect();
+      const t0 = performance.now(), dur = 1400;
+      const tick = now => {
+        const p = Math.min(1, (now - t0) / dur), v = Math.round(to * (1 - Math.pow(1 - p, 3)));
+        counter.textContent = '€' + v.toLocaleString('en-GB');
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }, { threshold: .6 });
+    co.observe(counter);
+  }
+
+  /* just-for-fun fourball draw */
+  const PLAYERS = ['Mack', 'Billy E', 'Tommy', 'Jimmy', 'Joe', 'Michael', 'JP', 'Kelsey', 'Sam', 'Hickory', 'Tom G', 'Dave'];
+  const groups = $('#groups');
+  $('#drawBtn').addEventListener('click', () => {
+    const a = PLAYERS.slice();
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    groups.hidden = false;
+    groups.innerHTML = [0, 1, 2].map(k => `
+      <div class="group" style="--d:${k * 90}ms">
+        <div class="label"><span>Fourball ${k + 1}</span><span>Tee ${k + 1}</span></div>
+        <ul>${a.slice(k * 4, k * 4 + 4).map(n => `<li>${n}</li>`).join('')}</ul>
+      </div>`).join('');
+    $('#drawBtn .lbl').textContent = 'Draw again';
+  });
+})();
+</script>
+</body>
+</html>
